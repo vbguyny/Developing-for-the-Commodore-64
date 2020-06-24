@@ -55,5 +55,5 @@ print
 
 str1    byte "the commodore 64", $00
 str2    byte "rocks!!!", $00
-newln   byte $0D
+newln   byte $0D, $00
 
