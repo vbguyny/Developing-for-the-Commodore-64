@@ -4,7 +4,7 @@
 
 *=$0810
 
-chout   = $ffd2         ; Kernel character output sub
+chout   = $ffd2         ; Kernal character output sub
 
 main
 

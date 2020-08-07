@@ -19,9 +19,9 @@ main
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Self-modify code - Direct index
-;        ldx #$00       ; Address least significant byte (LSB)
+;        ldx #<$0400    ; Address least significant byte (LSB)
 ;        stx @loop+1    ; Overwrite pointer LSB in loop sta
-;        ldx #$04       ; Address least significant byte (LSB)
+;        ldx #>$0400    ; Address least significant byte (LSB)
 ;        stx @loop+2    ; Overwrite pointer MSB in loop sta
 ;        ldy #0         ; Starting index
 ;        lda #'a'       ; Character to print
